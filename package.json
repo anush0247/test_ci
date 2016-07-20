@@ -1,0 +1,14 @@
+{
+  "lambci": {
+    "cmd": "npm install && npm run ci"
+  },
+  "scripts": {
+    "ci": "run-p ci:*",
+    "ci:node4": "nave use 4 npm test",
+    "ci:node5": "nave use 5 npm test",
+    "ci:node6": "nave use 6 npm test"
+  },
+  "devDependencies": {
+    "npm-run-all": "*"
+  }
+}
